@@ -1,0 +1,85 @@
+.carousel {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .carousel-left {
+    flex: 3;
+    position: relative;
+  }
+  
+  .carousel-images {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-image {
+    min-width: 100%;
+    height: 300px;
+    padding-top: 10px;
+  }
+  
+  .carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .arrows {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .arrows button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .carousel-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .thumbnail {
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid transparent;
+  }
+  
+  .thumbnail.active {
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+  }
+  
+  .carousel-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .carousel-right img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin-top: 10px;
+  }
+  
